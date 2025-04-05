@@ -362,8 +362,8 @@ const ButterchurnVisualizer = () => {
             setErrorMessage(`Fatal Setup Error: ${error.message}`);
             isInitializedRef.current = false; // Reset flag on error
         }
-        }
-    }, [log]); // Dependency: log
+    }
+    , [log]); // Dependency: log
 
     // --- Effect 1: Check if refs are populated ---
     useEffect(() => {
